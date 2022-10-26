@@ -6,8 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-// import { AddUserComponent } from './add-user/add-user.component';
-// import { DisplayUsersComponent } from './display-users/display-users.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { DisplayUsersComponent } from './display-users/display-users.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -15,8 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    // AddUserComponent,
-    // DisplayUsersComponent
+    AddUserComponent,
+    DisplayUsersComponent
   ],
   imports: [
     BrowserModule,
