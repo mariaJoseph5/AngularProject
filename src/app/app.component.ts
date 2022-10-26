@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { DataService } from './data.service';
+import { User } from './us';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular';
+  title = 'routing';
+  constructor(private router: Router, public data: DataService){
+  }
+  display(){
+    this.router.navigate(['/display']);
+  }
+  add(){
+    this.data.idVal = 0;
+    this.router.navigate(['/add']);
+  }
 }
