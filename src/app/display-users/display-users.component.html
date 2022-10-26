@@ -1,0 +1,9 @@
+<div *ngFor="let user of userList">
+    <div>
+    <p>Name: {{user.firstName}} {{user.lastName}}</p>
+    <p>Age: {{user.age}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Address: {{user.address}}, {{user.city}}</p>
+    <button (click)="openForm(user)">Edit</button>
+    </div>
+</div>
