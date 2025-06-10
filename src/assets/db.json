@@ -1,0 +1,134 @@
+{
+  "tasks": [
+    {
+      "id": "3",
+      "startDate": 1748823049403,
+      "status": "Not Started",
+      "priority": "Medium",
+      "task": "Read book",
+      "timeTaken": 10,
+      "description": "I have to finish my novel by Agatha Christie",
+      "category": "Entertainment and Leisure"
+    },
+    {
+      "id": "4",
+      "task": "Learn dance",
+      "timeTaken": 30,
+      "description": "I have to learn the steps to a new dance for a wedding",
+      "priority": "High",
+      "status": "In Progress",
+      "startDate": 1746548287000,
+      "category": "Goals and Aims"
+    },
+    {
+      "id": "5",
+      "startDate": 1747877409000,
+      "status": "Not Started",
+      "priority": "Low",
+      "task": "Practice singing",
+      "timeTaken": 10,
+      "description": "I have to practice carols for Christmas",
+      "category": "Goals and Aims"
+    },
+    {
+      "id": "6",
+      "startDate": 1747877412000,
+      "status": "Completed",
+      "priority": "Low",
+      "task": "Draw a scenery",
+      "timeTaken": 10,
+      "description": "I have to finish my drawing of nature",
+      "category": "Entertainment and Leisure"
+    },
+    {
+      "id": "7",
+      "startDate": 1746272678000,
+      "status": "Not Started",
+      "priority": "Low",
+      "task": "Create a sculpture",
+      "timeTaken": 12,
+      "description": "I have learn how to sculpt in my class",
+      "category": "Entertainment and Leisure"
+    },
+    {
+      "id": "8",
+      "task": "Cook dinner",
+      "timeTaken": 5,
+      "description": "Every alternate day I have to cook dinner for my family",
+      "priority": "Low",
+      "status": "In Progress",
+      "startDate": 1748601890000,
+      "category": "Home and Household"
+    },
+    {
+      "id": "9",
+      "task": "Go shopping",
+      "timeTaken": 3,
+      "description": "I have to go buy some new items for a trip",
+      "priority": "Medium",
+      "status": "In Progress",
+      "startDate": 1748782936382,
+      "category": "Errands and Admin"
+    },
+    {
+      "id": "10",
+      "task": "Studying Angular",
+      "timeTaken": 10,
+      "description": "I have to study Angular for an interview",
+      "priority": "High",
+      "status": "In Progress",
+      "startDate": 1748804753913,
+      "category": "Work and Career"
+    },
+    {
+      "id": "11",
+      "task": "Meetup with Friends",
+      "timeTaken": 1,
+      "description": "I have to go meet my college friends at a reunion",
+      "priority": "Low",
+      "status": "Not Started",
+      "startDate": 1748806370269,
+      "category": "Events and Appointments"
+    },
+    {
+      "id": "12",
+      "task": "Watch a movie",
+      "timeTaken": 6,
+      "description": "I have to watch a new movie that has come on Netflix",
+      "priority": "Low",
+      "status": "In Progress",
+      "startDate": 1748813947977,
+      "category": "Entertainment and Leisure"
+    },
+    {
+      "id": "13",
+      "task": "Creating a bank account",
+      "timeTaken": 10,
+      "description": "I have to create a new bank account through an online platform",
+      "priority": "High",
+      "status": "In Progress",
+      "startDate": 1748814691297,
+      "category": "Finance and Budgeting"
+    },
+    {
+      "id": "14",
+      "task": "Doing yoga",
+      "timeTaken": 3,
+      "description": "I have to learn to do yoga everyday",
+      "priority": "Medium",
+      "status": "In Progress",
+      "startDate": 1748816719270,
+      "category": "Health and Wellness"
+    },
+    {
+      "id": "15",
+      "task": "Finishing my assigment",
+      "timeTaken": 5,
+      "description": "I have to finish my assignment for a presentation this afternoon",
+      "priority": "Medium",
+      "status": "Not Started",
+      "startDate": 1748856182714,
+      "category": "Work and Career"
+    }
+  ]
+}

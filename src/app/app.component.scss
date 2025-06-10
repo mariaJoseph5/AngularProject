@@ -1,26 +1,28 @@
 button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    &:hover{
-        cursor: pointer;
-    }
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 div {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  padding: 20px;
 
-    > button {
-        margin: 20px;
-    }
+  > button {
+    margin: 20px;
+  }
 }
-.disable{
-    background-color: gray;
-    pointer-events: none;
+
+.disable {
+  background-color: gray;
+  pointer-events: none;
 }

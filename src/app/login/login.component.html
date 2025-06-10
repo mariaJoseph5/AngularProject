@@ -1,5 +1,9 @@
-<!-- 
-    <br>
-    <input type="text" placeholder="User Name" [(ngModel)]="user.userName">
-    <input type="text" placeholder="Password" [(ngModel)]="user.password">
-    <button (click)="loginFunc()">Login</button> -->
+<form [formGroup]="userForm" (ngSubmit)="loginFunc()">
+  <fa-icon [icon]="faUserCircle" size="10x" class="custom-icon"></fa-icon>
+  <input type="text" placeholder="User Name" formControlName="userName">
+  <input type="text" placeholder="Password" formControlName="password">
+  <button type="submit" class="custom-button" [class.disable-button]="!userForm.valid">Login</button>
+  <span *ngIf="!isLoggedIn && hasAttemptedLogin">
+  {{ errorMessage }}
+</span>
+</form>

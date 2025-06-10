@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../auth.service';
-import { User } from '../us';
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from '../auth/auth.service';
+import {FormBuilder, FormControl, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
+import {faUserCircle} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-login',
@@ -8,17 +10,28 @@ import { User } from '../us';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  // user: User = {
-  //   userName: '',
-  //   password: '',
-  //   token: ''
-  // };
-  // constructor(private auth: AuthService) { }
+  faUserCircle = faUserCircle;
+  isLoggedIn = false;
+  hasAttemptedLogin = false;
+  errorMessage = "Login failed! The user name or password is invalid.";
+  userForm = this.fb.group({
+    userName: new FormControl("", Validators.required),
+    password: new FormControl("", Validators.required)
+  });
+
+  constructor(private auth: AuthService, private fb: FormBuilder, private router: Router) {
+  }
 
   ngOnInit(): void {
+    this.userForm.valueChanges.subscribe(() => {
+      this.hasAttemptedLogin = false;
+    })
   }
-  // loginFunc(){
-  //   this.auth.login(this.user);
-  // }
+
+  loginFunc() {
+    this.hasAttemptedLogin = true;
+    this.isLoggedIn = this.auth.login(this.userForm.value);
+    this.router.navigate(['/home/dashboard']);
+  }
 
 }

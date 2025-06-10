@@ -1,0 +1,22 @@
+<div class="dashboard-container">
+  <div class="data-wrapper">
+    <div class="set-wrapper">
+      <h1>DUE TODAY!!</h1>
+      <div class="data-container" *ngFor="let data of todayList">
+        <p>{{ data?.task | uppercase }}</p>
+      </div>
+    </div>
+    <div class="set-wrapper">
+      <h1>OVERDUE!!!</h1>
+      <div class="data-container" *ngFor="let data of tasksOverdueList">
+        <p>{{ data?.task | uppercase }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="chart-wrapper">
+    <h1 class="chart-heading">TIME SPENT BY CATEGORY</h1>
+    <canvas #pieCanvasByCategory></canvas>
+    <h1 class="chart-heading">TIME SPENT BY TASK</h1>
+    <canvas #pieCanvas></canvas>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+.dashboard-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  color: white;
+  background-color: lightseagreen;
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.custom-button {
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  color: darkslategrey;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.selected {
+  color: darkslategrey;
+}

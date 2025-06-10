@@ -1,0 +1,133 @@
+:host {
+  padding: 100px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 4px solid darkslategrey;
+  padding: 40px 20px;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+  > div {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    padding: 20px 40px;
+    align-items: center;
+
+    > label {
+      flex-basis: 20%;
+      color: lightseagreen;
+      font-size: large;
+      font-weight: bold;
+    }
+
+    > input {
+      flex-basis: 80%;
+    }
+
+    > textarea {
+      flex-basis: 80%;
+    }
+
+    > select {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :host {
+    padding: 100px;
+  }
+  form {
+    > div {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    :host {
+      padding: 20px;
+    }
+  }
+}
+
+input {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid lightseagreen;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid lightseagreen;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid lightseagreen;
+  border-radius: 4px;
+
+  > option {
+    width: 100% !important;
+    background-color: white !important;
+    color: black !important;
+    padding: 14px 20px !important;
+    margin: 8px 0 !important;
+    border: 2px solid lightseagreen !important;
+    border-radius: 4px !important;
+  }
+}
+
+.button-last {
+  justify-content: flex-end;
+}
+
+.custom-button {
+  background-color: lightseagreen;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.disable-button {
+  background-color: lightslategray;
+  pointer-events: none;
+}
+
+.invalid-input {
+  border: 2px solid red;
+}
+
+.display {
+  font-weight: bold;
+  font-size: large;
+  font-style: italic;
+  color: maroon;
+}

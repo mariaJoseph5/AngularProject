@@ -1,0 +1,16 @@
+<div class="container-wrapper" *ngFor="let taskItem of (taskList$ | async)">
+  <div class="custom-container">
+    <p>Task: {{ taskItem?.task }}</p>
+    <p>Start Date : {{ taskItem?.startDate | date: 'dd-MM-yyyy':'UTC' }}</p>
+    <p>Description: {{ taskItem?.description }}</p>
+    <p>Status: {{ taskItem?.status }}</p>
+    <p>Priority: {{ taskItem?.priority }}</p>
+    <p>Time Taken: {{ taskItem?.timeTaken }}</p>
+    <p>Category: {{ taskItem?.category }}</p>
+    <div class="button-wrapper">
+      <button (click)="openForm($event, taskItem.id)">Edit</button>
+      <button (click)="openForm($event, taskItem.id)">Delete</button>
+    </div>
+  </div>
+</div>
+<app-modal [isOpen]="isModalOpen" [message]="message" (closeModal)="closeModal($event)"></app-modal>

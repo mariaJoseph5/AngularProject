@@ -1,2 +1,9 @@
-<br>
-<button (click)="logoutFunc()">Logout</button>
+<div class="dashboard-wrapper">
+  <h1>MY TASKS</h1>
+  <div class="header-wrapper">
+    <button *ngFor="let button of routeList" class="custom-button" [class.selected]="selectedRoute  == button"
+            (click)="navigate($event)">{{ button }}
+    </button>
+  </div>
+</div>
+<router-outlet></router-outlet>

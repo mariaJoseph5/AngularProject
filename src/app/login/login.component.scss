@@ -1,0 +1,44 @@
+form {
+  margin: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border: 4px solid darkslategrey;
+
+  input {
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid lightseagreen;
+    border-radius: 4px;
+  }
+
+  .custom-button {
+    background-color: lightseagreen;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .disable-button {
+    background-color: lightslategray;
+    pointer-events: none;
+  }
+}
+
+.custom-icon {
+  color: darkslategrey;
+}
+
+span {
+  color: darkred;
+}

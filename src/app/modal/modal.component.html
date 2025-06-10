@@ -1,0 +1,11 @@
+<div class="modal-wrapper" *ngIf="isOpen" (click)="onClose($event)">
+  <div class="modal" *ngIf="isOpen">
+    <div class="modal-content">
+      <p>{{ message }}</p>
+      <div class="button-wrapper">
+        <button class="close-button" (click)="onClose($event)">YES</button>
+        <button class="close-button" (click)="onClose($event)">NO</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<form [formGroup]="taskForm" (ngSubmit)="submit()">
+  <div>
+    <label for="task">Task</label>
+    <input id="task" class="input" type="text" formControlName="task" placeholder="Enter Task"
+           [class.invalid-input]="!taskForm.get('task')?.valid && !taskForm.get('task')?.pristine">
+  </div>
+  <div>
+    <label for="timeTaken">Time Taken</label>
+    <input id="timeTaken" class="input" type="number" formControlName="timeTaken" placeholder="Enter Time Taken"
+           [class.invalid-input]="!taskForm.get('timeTaken')?.valid && !taskForm.get('timeTaken')?.pristine">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <textarea id="description" name="description" formControlName="description" placeholder="Enter Description"
+              [class.invalid-input]="!taskForm.get('description')?.valid && !taskForm.get('description')?.pristine"></textarea>
+  </div>
+  <div>
+    <label for="priority">Priority</label>
+    <select id="priority" formControlName="priority" [value]="taskForm?.get('priority')?.value">
+      <option *ngFor="let level of priorities" [value]="level">{{ level | uppercase }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="status">Status</label>
+    <select id="status" formControlName="status" [value]="taskForm?.get('status')?.value">
+      <option *ngFor="let status of statusValues" [value]="status">{{ status | uppercase }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="category">Status</label>
+    <select id="category" formControlName="category" [value]="taskForm?.get('category')?.value">
+      <option *ngFor="let category of categories" [value]="category">{{ category | uppercase }}</option>
+    </select>
+  </div>
+  <div class="button-last">
+    <button class="custom-button" type="submit" [class.disable-button]="taskForm.invalid">Submit</button>
+  </div>
+</form>
